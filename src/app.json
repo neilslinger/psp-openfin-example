@@ -1,0 +1,28 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "Example WASM Perspective Application",
+        "description": "Example WASM Perspective Application",
+        "url": "http://localhost:8080/controller.html",
+        "uuid": "WASM-PSP-CONTROLLER-APP",
+        "backgroundColor": "#333333",
+        "contentMenu": true,
+        "autoShow": true,
+        "defaultWidth": 480,
+        "minWidth": 400,
+        "defaultHeight": 350,
+        "minHeight": 50,
+        "defaultTop": 100,
+        "defaultLeft": 100,
+        "resizable": true,
+        "maximizable": true,
+        "frame": true,
+        "alwaysOnTop": true
+    },
+    "runtime": {
+        "arguments": "",
+        "version": "8.56.28.36",
+        "fallbackVersion": "8.56.28.36"
+    },
+    "shortcut": {}
+}

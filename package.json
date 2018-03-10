@@ -1,0 +1,33 @@
+{
+  "name": "psp-openfin-example",
+  "version": "1.0.0",
+  "description": "PSP WASM OpenFin React Example",
+  "main": "controller.js",
+  "dependencies": {
+    "@jpmorganchase/perspective": "^0.1.3",
+    "@jpmorganchase/perspective-viewer": "^0.1.3",
+    "@jpmorganchase/perspective-viewer-highcharts": "^0.1.3",
+    "@jpmorganchase/perspective-viewer-hypergrid": "^0.1.3",
+    "babel-core": "6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "*",
+    "material-ui": "^0.19.4",
+    "openfin-cli": "^1.1.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "serve": "^6.4.8",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  },
+  "scripts": {
+    "setup": "mkdir -p build && cp -r node_modules/@jpmorganchase/perspective/build/* build && cp src/*.html build/. && cp src/*.json build/.",
+    "start": "npm run setup && webpack-dev-server",
+    "openfin": "openfin -l -c http://localhost:8080/app.json"
+  },
+  "author": "Neil Slinger",
+  "license": "Apache-2.0"
+}
